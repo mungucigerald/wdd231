@@ -4,12 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Munguci Gerald</title>
+    <meta name="author" content="Munguci Gerald">
+    <meta name="description"
+        content="This home page exhibits key projects from the Web Frontend Development (WDD231), features my profile and completed computer programming courses">
+    <title>Home Page | Munguci Gerald</title>
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playwrite+IT+Trad:wght@100..400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+
+    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
 </head>
 
 <body>
-    <h1>Test</h1>
-    <p>This is a simple test page.</p>
+    <header>
+        <img src="images/logo.svg" alt="Site Logo" width="40">
+        <span class="site-name">WDD 231: Web Frontend Development Ⅰ</span>
+        <button id="menu">&#9776;</button>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="chamber-project.html" target="_blank">Chamber Project</a></li>
+                <li><a href="final-project.html" target="_blank">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section>
+            <div class="profile">
+                <h2>About Me</h2>
+                <p>Hi! My name is Gerald Munguci and I live in Entebbe, Uganda. Welcome to my page! I’m a student who believes in staying
+                active both mentally and physically. When I’m not focused on my studies, you’ll usually find me on the basketball court,
+                analyzing my next move over a chessboard, or getting lost in a great book. Thanks for stopping by!</p>
+            </div>
+        </section>
+        <section>
+            <div class="photo">
+                <h2>Student Photo</h2>
+                <img src="images/profile.jpg" alt="Munguci Gerald's Photo" width="125" loading="lazy">
+            </div>
+        </section>
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="filters">
+                <button type="button" data-filter="all" class="active">ALL</button>
+                <button type="button" data-filter="WDD">WDD</button>
+                <button type="button" data-filter="CSE">CSE</button>
+            </div>
+            <ul id="course-list"></ul>
+            <p id="credits"></p>
+            <p id="earnedCredits"></p>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/mungucigerald" aria-label="GitHub"><img
+                    src="images/github-brands-solid-full.svg" alt="" width="30"></a>
+            <a href="www.linkedin.com/in/gerald-munguci" aria-label="LinkedIn"><img
+                    src="images/linkedin-brands-solid-full.svg" alt="" width="30"></a>
+            <a href="https://x.com" aria-label="X"><img src="images/square-x-twitter-brands-solid-full.svg" alt=""
+                    width="30"></a>
+        </div>
+        <p>&copy; <span id="currentYear"></span> Munguci Gerald | Uganda</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
 
 </html>

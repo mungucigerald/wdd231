@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Circular Badge -->
+  <circle cx="256" cy="256" r="240" fill="#1e293b" />
+
+  <g fill="none" stroke-width="44" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Bold 'M' in Crisp White -->
+    <path d="M 110 350 V 160 L 190 270 L 270 160 V 350" stroke="#ffffff" />
+
+    <!-- Bold 'G' in Vivid Emerald Accent -->
+    <path d="M 402 220 C 385 175, 345 160, 310 160 C 245 160, 230 220, 230 270 C 230 330, 255 350, 310 350 C 375 350, 402 300, 402 265 H 320" stroke="#10b981" />
+  </g>
+</svg>
