@@ -1,0 +1,127 @@
+@media screen and (min-width: 48em) {
+
+    #menu {
+
+        display: none;
+
+    }
+
+
+
+    nav,
+
+    nav.open {
+
+        display: block;
+
+        position: static;
+
+        width: auto;
+
+        margin-left: auto;
+
+        background: none;
+
+    }
+
+
+
+    nav ul {
+
+        display: flex;
+
+        gap: .25rem;
+
+    }
+
+
+
+    nav a {
+
+        border-left: 0;
+
+        border-bottom: 4px solid transparent;
+
+        padding: .5rem 1rem;
+
+    }
+
+
+
+    nav a:hover {
+
+        background: transparent;
+
+        border-bottom-color: var(--accent-color);
+
+    }
+
+
+
+    nav a.active {
+
+        border-bottom-color: var(--accent-color);
+
+    }
+
+
+
+    main {
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 1.25rem;
+
+        padding: 1.5rem;
+
+    }
+
+
+
+    main h1 {
+
+        grid-column: 1 / -1;
+
+        margin: 0;
+
+    }
+
+
+
+    section {
+
+        margin: 0;
+
+    }
+
+
+
+    .courses {
+
+        grid-column: 1 / -1;
+
+    }
+
+
+
+    #course-list {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+
+
+    footer {
+
+        display: flex;
+
+        justify-content: space-around;
+
+        align-items: center;
+
+    }
+
+}
