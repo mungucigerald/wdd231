@@ -88,7 +88,6 @@ nav a:hover{
 }
 
 nav a:active{
-    text-decoration: underline solid var(--dark-primary 2px);
     opacity: 0.6;
 }
 
@@ -97,6 +96,12 @@ main{
     font-size: .8rem;
     padding: 1rem;
     margin: 0 1rem;
+
+    h1{
+        font-family: var(--primary-font);
+        font-weight: 200;
+        text-align: center;
+    }
 }
 
 #view{
