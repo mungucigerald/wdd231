@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "companyName": "Laico Lake Victoria Hotel",
+            "address": "P.O Box 15, Entebbe Plot 23-31, Circular Road",
+            "phone": "+256-312310100",
+            "website": "lvhotel.co.ug",
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/17/b3/28/party-at-the-pool.jpg?w=1000&h=-1&s=1",
+            "membershipLevel": "5"
+        },
+        {
+            "companyName": "Imperial Golf View Hotel",
+            "address": "Plot 7 Lugard Avenue, Entebbe 00000 Uganda",
+            "phone": "+256417304000",
+            "website": "https://www.imperialhotels.co.ug/ImperialGolfViewHotel",
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/9e/a8/f8/imperial-golf-view-hotel.jpg?w=1100&h=-1&s=1",
+            "membershipLevel": "5"
+        },
+        {
+            "companyName": "Cafe Javas Entebbe",
+            "address": "Berkeley Rd Victoria Mall, Entebbe Uganda",
+            "phone": "+256 39 2175930",
+            "website": "https://cafejavas.co.ug/",
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/98/d4/ae/cafe-javas-entebbe.jpg?w=1800&h=1000&s=1",
+            "membershipLevel": "4"
+        },
+        {
+            "companyName": "Riders Lounge Uganda",
+            "address": "Lugard Avenue Imperial Mall, Entebbe Uganda",
+            "phone": "+256-700467257",
+            "website": "http://www.ridersloungeafrica.com/",
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/60/e0/93/caption.jpg?w=1100&h=-1&s=1",
+            "membershipLevel": "3"
+        },
+        {
+            "companyName": "Faze 3",
+            "address": "106 Circular Road, Entebbe 256 Uganda",
+            "phone": "+256 39 3671345",
+            "website": "https://www.faze3ug.com/",
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/cb/30/38/entrance.jpg?w=1600&h=-1&s=1",
+            "membershipLevel": "3"
+        },
+        {
+            "companyName": "Victoria Mall",
+            "address": "Berkeley Road (Plots 34–48)",
+            "phone": "+256 759 784 700",
+            "website": "https://megha-industries.com/15161-2/",
+            "image": "https://megha-industries.com/wp-content/uploads/2019/11/2017-04-09.jpg",
+            "membershipLevel": "2"
+        },
+        {
+            "companyName": "AeroLink Uganda",
+            "address": "P. O. Box 689 Entebbe, Uganda",
+            "phone": "+256317333000",
+            "website": "https://aerolinkuganda.com/",
+            "image": "https://staging.aerolinkuganda.com/wp-content/uploads/sites/5/2024/11/cropped-ak-logos-2-1.png",
+            "membershipLevel": ""
+        }
+    ]
+}

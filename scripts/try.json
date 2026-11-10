@@ -1,0 +1,18 @@
+{
+    "familyName": "Rukubo",
+    "startDate": "23-10-2025",
+    "size": 2,
+    "bishopricVisit": false,
+    "members": [
+        {
+            "name": "Gerald",
+            "gender": "Male",
+            "birthdate": "7-05-2001"
+        },
+        {
+            "name": "Shamim",
+            "gender": "Female",
+            "birthdate": "11-12-1996"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Merriweather",
+        serif;
+    text-align: center;
+    color: forestgreen
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    border: solid 1px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px;
+}
+
+#cards img{
+    width: 100%;
+    height: auto;
+}
+
+section{
+    background: #f4f1f1;
+    padding: 1rem;
+    border: .5px solid;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px;
+    font-family: "Bebas Neue",
+        sans-serif;
+    text-align: center;
+}
+
+section p{
+    font-family: "Playwrite IT Trad",
+        cursive;
+    font-size: .65rem;
+}
+
+footer{
+    font-family: "Playwrite IT Trad",
+        cursive;
+    padding-top: 2rem;
+    text-align: center;
+}
+
