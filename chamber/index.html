@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Entebbe Chamber of Commerce is your one stop hub for all things business. Find contacts and information for all your needs.">
+    <meta name="author" content="Munguci R Gerald">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script type="module" src="scripts/home.mjs"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="index.html">
+            <img src="images/logo.svg" alt="Entebbe Chamber of Commerce" width="40" height="40">
+            <div class="site-name">
+                <span class="brand-name">Entebbe</span>
+                <span class="sub-name">Chamber of Commerce</span>
+            </div>
+        </a>
+
+        <nav>
+            <button id="menu" aria-label="Toggle navigation" aria-expanded="false"
+                aria-controls="primary-nav">&#9776;</button>
+            <ul id="primary-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active" aria-current="page">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="wrapper">
+                <img class="hero-image" src="images/lakeside.webp" alt="Ariel view, Entebbe lakeside" width="1600"
+                    height="800">
+                <div class="content">
+                    <p>Welcome to the</p>
+                    <h1>Entebbe Chamber of Commerce</h1>
+                    <p class="desc">Where local businesses connect, grow ,and thrive.
+                        Discover our members, join an upcoming event, and become part of a community that champions
+                        Greater
+                        Entebbe's economy.
+                    </p>
+                    <div class="call-to-join">
+                        <a class="btn primary" href="join.html">Join Us</a>
+                        <a class="btn outline" href="directory.html">Explore Listing</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="main-info">
+                <p class="eyebrow">Who We Are</p>
+                <p class="brief">The Entebbe Chamber of Commerce has supported local businesses, from family-owned shops
+                    to growing
+                    companies, through
+                    networking events, advocacy, and community patnerships. Wether youre a long time resident or just
+                    opening your doors,
+                    we,re here to help you build relationships and reach more customers. <br>Our Membership
+                    levels(Non-profit, Bronze, Silver and Gold) offer benefits for every business size, inclusing event
+                    access, promotional opportunities and directory listings
+                </p>
+                <ul class="advocacy">
+                    <li><span class="icon"><img src="images/landmark-solid-full.svg" alt="" width="24"
+                                height="24"></span>
+                        <div><strong>Representation</strong> Advocacy on local zoning, tax and permit decisions</div>
+                    </li>
+                    <li><span class="icon"><img src="images/graduation-cap-solid-full.svg" alt="" width="24"
+                                height="24"></span>
+                        <div><strong>Workforce</strong> Patnerships with schools and training programs</div>
+                    </li>
+                    <li><span class="icon"><img src="images/file-signature-solid-full.svg" alt="" width="24"
+                                height="24"></span>
+                        <div><strong>Regulatory Relief</strong> Streamlinde licensing and fewer compliance burdens</div>
+                    </li>
+                    <li><span class="icon"><img src="images/store-solid-full.svg" alt="" width="24" height="24"></span>
+                        <div><strong>Community Commerce</strong> Shop-local campaigns that grow member campaigns</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="about-visual">
+                <img class="about-image" src="images/networking-event.jpg" alt="Members at a networking event"
+                    width="800" height="600" loading="lazy">
+                <ul class="stats">
+                    <li><span class="icon"><img src="images/handshake-regular-full.svg" alt="" width="24"
+                                height="24"></span>
+                        <div class="icon"><strong>150+ </strong><span>Member businesses</span></div>
+                    </li>
+                    <li><span class="icon"><img src="images/calendar-check-regular-full.svg" alt="" width="24"
+                                height="24"></span>
+                        <div><strong>40+ </strong><span>Events annually</span></div>
+                    </li>
+                    <li><span class="icon"><img src="images/award-solid-full.svg" alt="" width="24" height="24"></span>
+                        <div><strong>5+ </strong><span>Years serving Entebbe City</span></div>
+                    </li>
+                    <li><span class="icon"><img src="images/people-group-solid-full.svg" alt="" width="24"
+                                height="24"></span>
+                        <div><strong>5000+ </strong><span>Local jobs supported</span></div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="weather">
+            <p>CITY REPORT</p>
+            <h2>Weather in Entebbe</h2>
+            <div class="today-weather">
+                <div class="current-info">
+                    <div class="details">
+                        <p id="city"></p>
+                        <h3 id="temp"></h3>
+                        <p id="w-description"></p>
+                    </div>
+                    <div id="weather-icon">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="other-details">
+                    <div class="hi-lo">
+                        <p>High/Low</p>
+                        <span id="hi-lo"></span>
+                    </div>
+                    <div class="humidity">
+                        <p>Humidity</p>
+                        <span id="humidity"></span>
+                    </div>
+                    <div class="wind">
+                        <p>Wind</p>
+                        <span id="wind""></span>
+                    </div>
+                </div>
+            </div>
+            <span id=" heading">
+                            <p>Three Day Forecast</p>
+                        </span>
+                        <div class=" forecast">
+                            <!-- day1 -->
+                            <div class="day">
+                                <div class="day-info">
+                                    <h3 id="day1"></h3>
+                                    <p id="info1"></p>
+                                </div>
+                                <div class="day-info1">
+                                    <p id="day-temp1"></p>
+                                </div>
+                            </div>
+                            <!-- day2 -->
+                            <div class="day">
+                                <div class="day-info">
+                                    <h3 id="day2"></h3>
+                                    <p id="info2"></p>
+                                </div>
+                                <div class="day-info2">
+                                    <p id="day-temp2"></p>
+                                </div>
+                            </div>
+                            <!-- day3 -->
+                            <div class="day">
+                                <div class="day-info">
+                                    <h3 id="day3"></h3>
+                                    <p id="info3"></p>
+                                </div>
+                                <div class="day-info3">
+                                    <p id="day-temp3"></p>
+                                </div>
+                            </div>
+                            <p>Weather Information is dynamically updated.</p>
+                        </div>
+        </section>
+        <!-- Sample Data -->
+        <section class="spotlight">
+            <div class="brow">
+                <div>
+                    <h4>MEMBER SPOTLIGHT</h4>
+                    <h3>Our Members, Our Momentum</h3>
+                </div>
+                <a href="directory.html">Visit full directory <span class="arrow-right" aria-hidden="true"></span></a>
+            </div>
+            <div class="member-card" id="member-container">
+            </div>
+        </section>
+        <section class="events">
+            <h4>Whats new</h4>
+            <h3>Upcoming Events & Workshops</h3>
+            <div class="event-container">
+                <!-- event1  Sample Data-->
+                <div class="event-card">
+                    <div class="date">
+                        <time datetime="2026-12-15"><strong>15</strong> DEC</time>
+                    </div>
+                    <div class="event-info">
+                        <h4 class="category">EXPO</h4>
+                        <h3 class="event-name">Entebbe Business Expo</h3>
+                        <p class="e-date">9:00 AM - 4:00 PM</p><span class="e-location">Lakeside Conference Center, Entebbe</span>
+                        <p class="more-info">Showcase your products and meet new buyers.</p>
+                    </div>
+                </div>
+                <!-- event2 Sample Data-->
+                <div class="event-card">
+                    <div class="date">
+                        <time datetime="2027-01-08"><strong>08</strong> JAN</time>
+                    </div>
+                    <div class="event-info">
+                        <h4 class="category">WORKSHOP</h4>
+                        <h3 class="event-name">Digital Marketing for Small Businesses</h3>
+                        <p class="e-date">10:00 AM - 1:00 PM</p><span class="e-location">Chamber Training Room, Entebbe</span>
+                        <p class="more-info">Social media, Google Business profiles and online ads basics</p>
+                    </div>
+                </div>
+                <!-- event3 Sample Data-->
+                <div class="event-card">
+                    <div class="date">
+                        <time datetime="2027-02-12"><strong>12</strong> FEB</time>
+                    </div>
+                    <div class="event-info">
+                        <h4 class="category">NETWORKNG</h4>
+                        <h3 class="event-name">Business After Hours</h3>
+                        <p class="e-date">5:50 PM - 8:00 PM</p><span class="e-location">Laico Lake Victoria Hotel, Entebbe</span>
+                        <p class="more-info">Meet members over refreshments and exchange contacts</p>
+                    </div>
+                </div>
+                <!-- event4 -->
+                <div class="event-card">
+                    <div class="date">
+                        <time datetime="2027-03-20"><strong>20</strong> MAR</time>
+                    </div>
+                    <div class="event-info">
+                        <h4 class="category">TRAINING</h4>
+                        <h3 class="event-name">Export and Import Trade Readiness</h3>
+                        <p class="e-date">9:00 AM - 3:00 PM</p><span class="e-location">Victoria Mall Conference Hall, Entebbe</span>
+                        <p class="more-info">Documentation, customs basics and connect with East African markets</p>
+                    </div> 
+                </div>
+            </div>
+        </section>
+    </main>
+    <div></div>
+    <footer><span><strong>Entebbe Chamber of Commerce</strong> <br>Right Lane, Entebbe Road <br>Entebbe, Uganda
+            <br>info@entebbecc.ug</span>
+
+        <div class="social">
+            <a href="https://youtube.com" aria-label="Youtube"><img src="images/youtube.svg" alt="" width="50"
+                    height="50"></a>
+            <a href="www.linkedin.com" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="" width="50"
+                    height="50"></a>
+            <a href="https://x.com" aria-label="X"><img src="images/square-x.svg" alt="" width="50" height="50"></a>
+        </div>
+
+        <div class="credit">
+            <p>WDD 231 Class Project <br> Munguci Gerald <br> &copy; <span id="currentYear"></span> Entebbe Chamber of
+                Commerce <br> Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
