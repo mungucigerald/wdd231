@@ -136,7 +136,7 @@
     padding: 2rem;
     border: none;
     border-radius: 16px;
-    box-shadow: o 20px 60px rgb(0 0 0 / 30%);
+    box-shadow: 0 20px 60px rgb(0 0 0 / 30%);
     animation: pop .25s ease-out;
 }
 
@@ -238,7 +238,7 @@ backdrop-filter: blur(3px);}
     font-family: var(--detail-font);
     font-weight: 600;
     cursor: pointer;
-    transition: background 0.2s transform 0.1s;
+    transition: background 0.2s, transform 0.1s;
 }
 
 .application .primary-button:hover {
