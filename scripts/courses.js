@@ -89,6 +89,10 @@ function render(items) {
     list.innerHTML = '';
     items.forEach(c => {
         const li = document.createElement('li');
+        li.classList.add('course');
+        li.addEventListener('click', () => {
+            showDetails(c)
+        });
         li.textContent = `${c.subject} ${c.number}`;
         if (c.completed) li.classList.add('completed');
         li.title = c.title;
@@ -112,3 +116,27 @@ buttons.forEach(btn => {
 
 // Call the render function with the courses array passed into it.
 render(courses);
+
+const courseDetails = document.querySelector('#course-details');
+
+function showDetails(course) {
+    courseDetails.innerHTML = `
+    <button id="closeModal" aria-label="Close">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certicate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>`;
+    courseDetails.showModal();
+
+    courseDetails.querySelector('#closeModal').addEventListener('click', () => {
+        courseDetails.close();
+    });
+}
+
+courseDetails.addEventListener('click', (event) => {
+    if (event.target === courseDetails) {
+        courseDetails.close();
+    }
+});

@@ -1,11 +1,11 @@
 :root {
     --ink: #212e33;
     --background: #f7f9f8;
-    --primary-color: #14584f;
-    --dark-primary: #0d3d37;
+    --primary-color: #e8a317;
+    --dark-primary: #0b3c5d;
     --accent-color: #f2b84b;
     --accent2: #dff1e6;
-    --accent3: #e6ecea;
+    --accent3: #f4200d;
     --primary-font: "Merriweather", serif;
     --secondary-font: "Bebas Neue", sans-serif;
     --detail-font: "Playwrite IT Trad", cursive;
@@ -198,6 +198,37 @@ footer {
     text-align: center;
     background: var(--dark-primary);
     color: var(--accent2);
+}
+
+dialog {
+    width: 85%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    padding: 1rem;
+}
+
+dialog::backdrop{
+    background-color: rgb(0 0 0 / 65%);
+}
+
+dialog p{
+    font-family: var(--secondary-font);
+}
+
+dialog p strong{
+    font-family: var(--detail-font);
+}
+
+dialog button{
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border-radius: 4px;
+    border: 1px solid rgb(0 0 0 / 10%);
+    background-color: inherit;
 }
 
 footer p {
