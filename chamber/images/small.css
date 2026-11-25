@@ -1,0 +1,334 @@
+/* ---------- Variables (the only place raw color values live) ---------- */
+:root {
+    --ink: #212e33;
+    --background: #f7f9f8;
+    --primary-color: #E8A317;
+    --dark-primary: #0B3C5D;
+    --light-bg: #fff;
+    --overlay-strong: rgb(0 0 0 / .6);
+    --overlay-soft: rgb(0 0 0 / .25);
+    --border-subtle: rgb(0 0 0 / 10%);
+    --primary-font: "Fraunces", serif;
+    --secondary-font: "Inter", sans-serif;
+    --detail-font: "Playwrite IT Trad", cursive;
+}
+
+/* ---------- Header & navigation ---------- */
+header {
+    position: relative;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    color: var(--ink);
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    font-family: var(--primary-font);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 12px;
+    align-items: center;
+}
+
+.site-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#menu {
+    position: relative;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#primary-nav {
+    display: none;
+}
+
+#primary-nav.open {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    background: var(--primary-color);
+}
+
+nav ul {
+    list-style: none;
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    font-size: small;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    background: linear-gradient(var(--dark-primary), var(--dark-primary)) no-repeat 0 100% / 0 2px;
+    transition: background-size 0.3s;
+    padding-bottom: 4px;
+}
+
+nav a:hover {
+    background-size: 100% 2px;
+}
+
+nav a:active {
+    opacity: 0.6;
+}
+
+/* ---------- Main (merged with hero, so no outer padding/margin) ---------- */
+main {
+    font-family: var(--secondary-font);
+    font-size: .8rem;
+    padding: 0;
+    margin: 0;
+
+    h1 {
+        font-family: var(--primary-font);
+        font-weight: 200;
+        text-align: center;
+    }
+}
+
+main>section:not(.hero) {
+    margin: 1rem;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+    /* overrides the global section styles below */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    display: grid;
+    overflow: hidden;
+}
+
+.hero .wrapper {
+    display: contents;
+}
+
+.hero img,
+.hero .content {
+    grid-area: 1/1;
+}
+
+.hero .content {
+    align-self: center;
+    text-align: left;
+    letter-spacing: .1rem;
+    margin: 1rem;
+    padding: 1.5rem;
+    color: var(--background);
+    background: linear-gradient(var(--overlay-strong), var(--overlay-soft));
+    font-weight: bold;
+}
+
+.hero h1 {
+    text-align: left;
+    font-weight: 700;
+}
+
+.hero .desc {
+    font-weight: 900;
+    text-align: center;
+}
+
+.hero .wrapper img.hero-image {
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ---------- Buttons ---------- */
+.call-to-action {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    margin: .75rem;
+    border-radius: 6px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: transform 0.55s ease, background-color 0.15s ease;
+}
+
+.btn.primary {
+    background: var(--dark-primary);
+    color: var(--background);
+}
+
+.btn.outline {
+    border: 2px solid var(--primary-color);
+    color: var(--background);
+}
+
+.btn.primary:hover,
+.btn.outline:hover {
+    color: var(--background);
+}
+
+.btn.primary:hover {
+    border: 2px solid var(--primary-color);
+    background: none;
+}
+
+.btn.outline:hover {
+    background: var(--dark-primary);
+    border: none;
+}
+
+/* ---------- Summary ---------- */
+#summary-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.summary {
+    padding: 1rem;
+    background: var(--dark-primary);
+    color: var(--background);
+    font-family: var(--primary-font);
+    line-height: 1.5;
+    border-radius: 0;
+}
+
+.summary h2,
+.summary dd {
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    padding-bottom: .5rem;
+    text-decoration: underline;
+}
+
+.next-steps {
+    padding: 1rem;
+    border-left: 4px solid var(--primary-color);
+    font-family: var(--detail-font);
+    line-height: 2;
+}
+
+.next-steps a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 800;
+}
+
+/* ---------- General elements ---------- */
+#view {
+    margin: 1rem auto;
+    text-align: center;
+}
+
+button {
+    padding: .5rem 1rem;
+    font-weight: 600;
+}
+
+section {
+    border: 1px solid var(--border-subtle);
+    padding: 1rem .5rem;
+    background-color: var(--background);
+    border-radius: 4px;
+}
+
+/* ---------- Grid view ---------- */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    text-align: center;
+}
+
+.grid section img {
+    width: 100%;
+    max-width: 200px;
+    height: 100px;
+    object-fit: cover;
+    box-shadow: 0 0 .5rem var(--dark-primary);
+}
+
+/* ---------- List view ---------- */
+.list {
+    display: flex;
+    flex-direction: column;
+
+    section {
+        display: grid;
+        grid-template-columns: 2fr 1fr 150px;
+        gap: .75rem;
+        margin: 0;
+        padding: .55rem;
+        justify-content: space-around;
+
+        a {
+            text-decoration: none;
+            color: var(--ink);
+        }
+
+        img {
+            display: none;
+        }
+
+        h2 {
+            font-size: 1rem;
+        }
+
+        &:nth-child(even) {
+            background-color: var(--dark-primary);
+            color: var(--background);
+
+            a {
+                color: var(--background);
+            }
+        }
+    }
+}
+
+/* ---------- Footer ---------- */
+footer {
+    font-family: var(--secondary-font);
+    line-height: 1.5;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: space-between;
+    background-color: var(--dark-primary);
+    color: var(--primary-color);
+}
+
+#lastModified {
+    font-family: var(--detail-font);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social img {
+    filter: invert(1);
+}
